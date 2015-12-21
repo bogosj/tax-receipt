@@ -3,185 +3,150 @@
 	"percent": 1,
 	"categories": [
 		{
-			"label": "Health Care",
-			"description": "Spending on Medicare Supplementary Medical Insurance and the prescription drug benefit, Medicaid, Children's Health Insurance Program, food safety, disease control and additional health care activities. Because this calculator focuses on how income taxes are spent, spending from Medicare taxes is excluded. Additionally, health care for the armed forces is included under National Defense and health care for veterans is included under Veterans Benefits. (Corresponds to budget functions 550 and 570)",
-			"percent": 0.2749,
-			"path": "healthcare.html",
+			"label": "School Taxes",
+			"description": "",
+			"percent": 0.5219
+		},{
+			"label": "County Taxes",
+			"description": "",
+			"percent": 0.0826
+		},{
+			"label": "Public Safety",
+			"description": "",
+			"percent": 0.08331,
 			"categories": [
-				{
-					"label": "Medicaid and Children's Health Insurance Program (CHIP)",
-					"percent": 0.1231
-				},{
-					"label": "Medicare doctor payments and prescription drug payments",
-					"percent": 0.1127
-				},{
-					"label": "Additional health care activities",
-					"percent": 0.0161
-				},{
-					"label": "Health research and food safety",
-					"percent": 0.0138
-				},{
-					"label": "Disease control and public health services",
-					"percent": 0.0091
-				}
+				{"label": "Public Defender", "percent": 0.00003461982831},
+				{"label": "Municipal Prosecutor", "percent": 0.0001066290712},
+				{"label": "First Aid Ambulance Corp Contribution", "percent": 0.0001246313819},
+				{"label": "Emergency Management", "percent": 0.0001966406248},
+				{"label": "Police Dispatch / 911", "percent": 0.0002507860363},
+				{"label": "Life Hazard Use Fees - Fire Official", "percent": 0.0003127832248},
+				{"label": "Uniform Fire Safety Act - Fire Official", "percent": 0.001135530369},
+				{"label": "Municipal Court", "percent": 0.002057484092},
+				{"label": "Fire Official", "percent": 0.002410273991},
+				{"label": "Fire", "percent": 0.005316913232},
+				{"label": "Police", "percent": 0.07136427548},
 			]
 		},{
-			"label": "National Defense",
-			"description": "Spending on military personnel, operations, procurement and other activities critical to our national defense. (Corresponds to budget function 050)",
-			"percent": 0.2391,
+			"label": "Insurance",
+			"description": "",
+			"percent": 0.07302,
 			"categories": [
-				{
-					"label": "Ongoing operations, equipment, and supplies",
-					"percent": 0.0969
-				},{
-					"label": "Research, development, weapons, and construction",
-					"percent": 0.0722
-				},{
-					"label": "Military personnel salaries and benefits",
-					"percent": 0.0595
-				},{
-					"label": "Atomic energy defense activities",
-					"percent": 0.0069
-				},{
-					"label": "Defense-related FBI activities and additional national defense",
-					"percent": 0.0036
-				}
+				{"label": "Other Insurance Premiums", "percent": 0.0002769586265},
+				{"label": "Health Benefit Waiver Costs", "percent": 0.001038594849},
+				{"label": "General Liability Insurance", "percent": 0.007041673078},
+				{"label": "Workers Compensation Insurance", "percent": 0.008066419996},
+				{"label": "Employee Group Insurance", "percent": 0.05659267329},
 			]
 		},{
-			"label": "Job and Family Security",
-			"description": "Spending on unemployment insurance, food assistance, relevant tax credits, and other programs designed for income security. Because this calculator focuses on how income taxes are spent, spending from unemployment insurance taxes is excluded. (Corresponds to budget function 600)",
-			"percent": 0.1817,
+			"label": "Public Works",
+			"description": "",
+			"percent": 0.04392,
 			"categories": [
-				{
-					"label": "Federal military and civilian employee retirement and disability",
-					"percent": 0.0533
-				},{
-					"label": "Food and nutrition assistance",
-					"percent": 0.0408
-				},{
-					"label": "Earned income and child tax credits",
-					"percent": 0.0323
-				},{
-					"label": "Supplemental Security Income",
-					"percent": 0.0219
-				},{
-					"label": "Housing assistance",
-					"percent": 0.0189
-				},{
-					"label": "Temporary Assistance for Needy Families",
-					"percent": 0.0067
-				},{
-					"label": "Child care, foster care, and adoption support",
-					"percent": 0.0063
-				},{
-					"label": "Railroad retirement and additional income security",
-					"percent": 0.0016
-				}
+				{"label": "Sewer System", "percent": 0.0006314656684},
+				{"label": "Shade Tree Division", "percent": 0.004397119785},
+				{"label": "Recycling", "percent": 0.004629945055},
+				{"label": "Buldings and Grounds", "percent": 0.007113059164},
+				{"label": "Garbage and Trash Removal", "percent": 0.008712495232},
+				{"label": "Street and Road Maintenance", "percent": 0.0184405562},
 			]
 		},{
-			"label": "Net Interest",
-			"description": "Spending on interest, including interest on Treasury debt securities. (Corresponds to budget function 900)",
-			"percent": 0.0907
-		},{
-			"label": "Veterans Benefits",
-			"description": "Spending on benefits for veterans, including health care, disability compensation, pension, education, and home loans. (Corresponds to budget function 700)",
-			"percent": 0.0593,
+			"label": "Statutory Expenditures",
+			"description": "",
+			"percent": 0.03183,
 			"categories": [
-				{
-					"label": "Income and housing support",
-					"percent": 0.0289
-				},{
-					"label": "Health care",
-					"percent": 0.0223
-				},{
-					"label": "Education, training, and additional veterans benefits",
-					"percent": 0.0081
-				}
+				{"label": "Green Trust Loan Program", "percent": 0.000152244157},
+				{"label": "Interest on Notes", "percent": 0.000553917253},
+				{"label": "Bergen County Improvement Authority", "percent": 0.0006577767379},
+				{"label": "Interest on Bonds", "percent": 0.004777536307},
+				{"label": "Payment of Bond Anticipation Notes and Capital Notes", "percent": 0.00564995598},
+				{"label": "Payment of Bond Prinicpal", "percent": 0.01924862454},
 			]
 		},{
-			"label": "Education and Job Training",
-			"description": "Spending on student financial aid, special education, job training, and other educational and job activities. (Corresponds to budget function 500)",
-			"percent": 0.0359,
+			"label": "Sewer Services Charges Contractual",
+			"description": "",
+			"percent": 0.02339,
 			"categories": [
-				{
-					"label": "Elementary, secondary, and vocational education",
-					"percent": 0.0162
-				},{
-					"label": "Employment training for people with disabilities and additional education and job services",
-					"percent": 0.0090
-				},{
-					"label": "Student financial aid for college",
-					"percent": 0.0080
-				},{
-					"label": "Job training and employment services",
-					"percent": 0.0028
-				}
+				{"label": "Passaic Valley Trunk Sewer", "percent": 0.007200924288},
+				{"label": "Bergen County Utility Authority", "percent": 0.01618476973},
 			]
 		},{
-			"label": "Immigration, Law Enforcement, and Administration of Justice",
-			"description": "Spending on border security, immigration enforcement, litigation, the federal judiciary, and other activities related to the administration of justice. (Corresponds to budget function 750)",
-			"percent": 0.0200
-		},{
-			"label": "International Affairs",
-			"description": "Spending on embassies, exchange activities, humanitarian assistance, and other activities related to international affairs. (Corresponds to budget function 150)",
-			"percent": 0.0185,
+			"label": "Capital Improvements",
+			"description": "",
+			"percent": 0.02001,
 			"categories": [
-				{
-					"label": "Development and humanitarian assistance",
-					"percent": 0.0093
-				},{
-					"label": "Foreign affairs, embassies, and additional international affairs",
-					"percent": 0.0047
-				},{
-					"label": "Security assistance",
-					"percent": 0.0045
-				}
+				{"label": "HVAC and Other Building Improvements to Borough Hall and Police Headquarters", "percent": 0.009693551927},
+				{"label": "Capital Improvement Fund", "percent": 0.01031255446},
 			]
 		},{
-			"label": "Natural Resources, Energy, and Environment",
-			"description": "Spending on water management, energy supply, pollution control, and other activities related to natural resources, energy, and the environment. (Corresponds to budget functions 270 and 300)",
-			"percent": 0.0164,
+			"label": "General Government Functions",
+			"description": "",
+			"percent": 0.01989,
 			"categories": [
-				{
-					"label": "Pollution control and other natural resources, energy, and environment",
-					"percent": 0.0075
-				},{
-					"label": "Water and land management",
-					"percent": 0.0070
-				},{
-					"label": "Energy supply and conservation",
-					"percent": 0.0020
-				}
+				{"label": "Mayor and Council", "percent": 0.0003254263861},
+				{"label": "Auditing and Accounting Services", "percent": 0.0003461982831},
+				{"label": "Computerized Data Processing", "percent": 0.000553917253},
+				{"label": "Engineering Services and Costs", "percent": 0.001315553476},
+				{"label": "Assessment of Taxes", "percent": 0.00161120681},
+				{"label": "Collection of Taxes", "percent": 0.002341408228},
+				{"label": "Legal Services and Costs", "percent": 0.002492627638},
+				{"label": "General Administration", "percent": 0.00335930042},
+				{"label": "Municipal Clerk's Office", "percent": 0.003666059795},
+				{"label": "Financial Administration", "percent": 0.003874568097},
 			]
 		},{
-			"label": "Science, Space, and Technology Programs",
-			"description": "Spending on general science, basic research, and space flight. (Corresponds to budget function 250)",
-			"percent": 0.0113,
+			"label": "Utility Expenses/Bulk Purchases",
+			"description": "",
+			"percent": 0.01532,
 			"categories": [
-				{
-					"label": "NASA",
-					"percent": 0.0066
-				},{
-					"label": "National Science Foundation, additional science research, and laboratories",
-					"percent": 0.0048
-				}
+				{"label": "Fuel Oil", "percent": 0.0004154379397},
+				{"label": "Water", "percent": 0.0007616362228},
+				{"label": "Telephone", "percent": 0.001038594849},
+				{"label": "Street Lighting", "percent": 0.003669701801},
+				{"label": "Gasoline", "percent": 0.003808181114},
+				{"label": "Electricity", "percent": 0.005629184083},
 			]
 		},{
-			"label": "Agriculture",
-			"description": "Spending on agricultural activities, including research, crop insurance, and agricultural subsidies. (Corresponds to budget function 350)",
-			"percent": 0.0097
+			"label": "Maintenance of Free Public Library",
+			"description": "",
+			"percent": 0.01356
 		},{
-			"label": "Community, Area, and Regional Development",
-			"description": "Spending on activities to strengthen communities, including spending on the Community Development Fund. Other major accounts are Operation of Indian Programs, the Neighborhood Stabilization Program, and the Rural Water and Waste Disposal Program Account. (Corresponds to budget subfunctions 451 and 452)",
-			"percent": 0.0043
+			"label": "Health and Welfare",
+			"description": "",
+			"percent": 0.00830,
+			"categories": [
+				{"label": "Animal Control Services", "percent": 0.0003107475789},
+				{"label": "Senior Citizen Center (55 Kip)", "percent": 0.0007616362228},
+				{"label": "Administration of Public Assistance", "percent": 0.001338845696},
+				{"label": "Board of Health", "percent": 0.005891920884},
+			]
 		},{
-			"label": "Response to Natural Disasters",
-			"description": "Spending on natural disaster response and insurance, including Small Business Administration disaster loans and FEMA grants. (Corresponds to budget subfunction 453)",
-			"percent": 0.0039
+			"label": "Recreation Department",
+			"percent": 0.008044484873
 		},{
-			"label": "Additional Government Programs",
-			"description": "Spending on all other government programs, including transportation, promotion of commerce, mortgage credit, and governmental administration. Because this calculator focuses on how income taxes are spent, spending from Social Security and Highway Trust Fund taxes is excluded.",
-			"percent": 0.0342
+			"label": "Construction Code Official",
+			"percent": 0.0042617978
+		},{
+			"label": "Salary Attrition (Terminal Leave)",
+			"percent": 0.003461982831
+		},{
+			"label": "Public and Private Programs Offset by Revenues",
+			"description": "",
+			"percent": 0.00327,
+			"categories": [
+				{"label": "Cops in Shops", "percent": 0.00001686678035},
+				{"label": "Labor Day Street Fair", "percent": 0.00003531222488},
+				{"label": "Bergen County Local Arts Program", "percent": 0.00004265162848},
+				{"label": "DCS - Recreation for Individuals with Disabilities", "percent": 0.0000553917253},
+				{"label": "Alcohol Dependency", "percent": 0.00006058469954},
+				{"label": "Recycling Tonnage", "percent": 0.0002671958349},
+				{"label": "Sustainable New Jersey", "percent": 0.0002769586265},
+				{"label": "NJDEP - Clean Communities Program", "percent": 0.0004489083897},
+				{"label": "New Jersey Transportation Trust Fund Authority Act", "percent": 0.002063341767},
+			]
+		},{
+			"label": "Additional Governmet Programs",
+			"percent": 0.0046602
 		}
 	]
 }
