@@ -1,5 +1,5 @@
 var app = angular.module('taxReceipt', ['mgcrea.ngStrap']);
-var max = .2749;
+var max = 0.5219;
 
 app.controller('TaxReceiptCtrl', function($scope, $http) {
 	// Load budget from JSON file
