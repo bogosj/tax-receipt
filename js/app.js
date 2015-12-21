@@ -76,6 +76,9 @@ app.directive('receipt.dataBar', function() {
 			var percent = Math.round((decimal / maxPercent)*100) + '%';
 			elem.attr('class', 'data-bar');
 			elem.css('width', percent);
+			if (scope.category.nonMuni) {
+				elem.attr('class', 'data-bar-non-muni');
+			}
 		}
 	}
 })

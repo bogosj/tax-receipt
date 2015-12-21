@@ -3,10 +3,12 @@
   "percent": 1,
   "categories": [
     {
+      "nonMuni": true,
       "label": "School Taxes",
       "dollars": 37689928
     },
     {
+      "nonMuni": true,
       "label": "County Taxes",
       "dollars": 5966052
     },
