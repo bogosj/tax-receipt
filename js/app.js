@@ -1,7 +1,7 @@
 var app = angular.module('taxReceipt', ['mgcrea.ngStrap']);
-var max = 0.5219;
+var maxPercent = 0;
 
-var getTotalBudget = function(budgetData) {
+var setTotalBudget = function(budgetData) {
 	var total = 0;
 	for (var i=0; i<budgetData['categories'].length; i++){
 		var category = budgetData['categories'][i];
@@ -14,11 +14,31 @@ var getTotalBudget = function(budgetData) {
 			}
 		}
 	}
-	return total;
+	budgetData['total'] = total;
+}
+
+var setCalculatedPercents = function(budgetData) {
+	var total = budgetData['total'];
+	for (var i=0; i<budgetData['categories'].length; i++){
+		var category = budgetData['categories'][i];
+		if (category['dollars']) {
+			category['percent'] = category['dollars'] / total;
+		} else {
+			var categoryTotal = 0;
+			for (var j=0; j<category['categories'].length; j++){
+				var subCategory = category['categories'][j];
+				subCategory['percent'] = subCategory['dollars'] / total;
+				categoryTotal += subCategory['dollars'];
+			}
+			category['percent'] = categoryTotal / total;
+		}
+		maxPercent = Math.max(maxPercent, category['percent']);
+	}
 }
 
 var budgetCalculation = function(budgetData) {
-	budgetData['total'] = getTotalBudget(budgetData);
+	setTotalBudget(budgetData);
+	setCalculatedPercents(budgetData);
 	return budgetData;
 };
 
@@ -53,7 +73,7 @@ app.directive('receipt.dataBar', function() {
 	return {
 		link: function(scope, elem, attrs) {
 			var decimal = scope.sub? scope.sub.percent : scope.category.percent;
-			var percent = Math.round((decimal / max)*100) + '%';
+			var percent = Math.round((decimal / maxPercent)*100) + '%';
 			elem.attr('class', 'data-bar');
 			elem.css('width', percent);
 		}
