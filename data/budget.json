@@ -5,457 +5,371 @@
     {
       "label": "School Taxes",
       "description": "",
-      "dollars": 37689928,
-      "percent": 0.5219
+      "dollars": 37689928
     },
     {
       "label": "County Taxes",
       "description": "",
-      "dollars": 5966052,
-      "percent": 0.0826
+      "dollars": 5966052
     },
     {
       "label": "Public Safety",
       "description": "",
-      "percent": 0.08331,
       "categories": [
         {
           "label": "Public Defender",
-          "dollars": 2500,
-          "percent": 0.00003461982831
+          "dollars": 2500
         },
         {
           "label": "Municipal Prosecutor",
-          "dollars": 7700,
-          "percent": 0.0001066290712
+          "dollars": 7700
         },
         {
           "label": "First Aid Ambulance Corp Contribution",
-          "dollars": 9000,
-          "percent": 0.0001246313819
+          "dollars": 9000
         },
         {
           "label": "Emergency Management",
-          "dollars": 14200,
-          "percent": 0.0001966406248
+          "dollars": 14200
         },
         {
           "label": "Police Dispatch / 911",
-          "dollars": 18110,
-          "percent": 0.0002507860363
+          "dollars": 18110
         },
         {
           "label": "Life Hazard Use Fees - Fire Official",
-          "dollars": 22587,
-          "percent": 0.0003127832248
+          "dollars": 22587
         },
         {
           "label": "Uniform Fire Safety Act - Fire Official",
-          "dollars": 82000,
-          "percent": 0.001135530369
+          "dollars": 82000
         },
         {
           "label": "Municipal Court",
-          "dollars": 148577,
-          "percent": 0.002057484092
+          "dollars": 148577
         },
         {
           "label": "Fire Official",
-          "dollars": 174053,
-          "percent": 0.002410273991
+          "dollars": 174053
         },
         {
           "label": "Fire",
-          "dollars": 383950,
-          "percent": 0.005316913232
+          "dollars": 383950
         },
         {
           "label": "Police",
-          "dollars": 5153425,
-          "percent": 0.07136427548
+          "dollars": 5153425
         }
       ]
     },
     {
       "label": "Insurance",
       "description": "",
-      "percent": 0.07302,
       "categories": [
         {
           "label": "Other Insurance Premiums",
-          "dollars": 20000,
-          "percent": 0.0002769586265
+          "dollars": 20000
         },
         {
           "label": "Health Benefit Waiver Costs",
-          "dollars": 75000,
-          "percent": 0.001038594849
+          "dollars": 75000
         },
         {
           "label": "General Liability Insurance",
-          "dollars": 508500,
-          "percent": 0.007041673078
+          "dollars": 508500
         },
         {
           "label": "Workers Compensation Insurance",
-          "dollars": 582500,
-          "percent": 0.008066419996
+          "dollars": 582500
         },
         {
           "label": "Employee Group Insurance",
-          "dollars": 4086724,
-          "percent": 0.05659267329
+          "dollars": 4086724
         }
       ]
     },
     {
       "label": "Public Works",
       "description": "",
-      "percent": 0.04392,
       "categories": [
         {
           "label": "Sewer System",
-          "dollars": 45600,
-          "percent": 0.0006314656684
+          "dollars": 45600
         },
         {
           "label": "Shade Tree Division",
-          "dollars": 317529,
-          "percent": 0.004397119785
+          "dollars": 317529
         },
         {
           "label": "Recycling",
-          "dollars": 334342,
-          "percent": 0.004629945055
+          "dollars": 334342
         },
         {
           "label": "Buldings and Grounds",
-          "dollars": 513655,
-          "percent": 0.007113059164
+          "dollars": 513655
         },
         {
           "label": "Garbage and Trash Removal",
-          "dollars": 629155,
-          "percent": 0.008712495232
+          "dollars": 629155
         },
         {
           "label": "Street and Road Maintenance",
-          "dollars": 1331647,
-          "percent": 0.0184405562
+          "dollars": 1331647
         }
       ]
     },
     {
       "label": "Statutory Expenditures",
       "description": "",
-      "percent": 0.03183,
       "categories": [
         {
           "label": "Unemployment Insurance",
-          "dollars": 2500,
-          "percent": 0.00003461982831
+          "dollars": 2500
         },
         {
           "label": "Defined Contriution Retirement Plan",
-          "dollars": 12500,
-          "percent": 0.0001730991416
+          "dollars": 12500
         },
         {
           "label": "Fire Widows' Pension",
-          "dollars": 24000,
-          "percent": 0.0003323503518
+          "dollars": 24000
         },
         {
           "label": "Social Security System (O.A.S.I.)",
-          "dollars": 583800,
-          "percent": 0.0080844223
+          "dollars": 583800
         },
         {
           "label": "Public Employees' Retirement System",
-          "dollars": 650000,
-          "percent": 0.009001155361
+          "dollars": 650000
         },
         {
           "label": "Police and Firemen's Retirement System of NJ",
-          "dollars": 1026000,
-          "percent": 0.01420797754
+          "dollars": 1026000
         }
       ]
     },
     {
       "label": "Municipal Debt Service",
       "decription": "",
-      "percent": 0.03104,
       "categories": [
         {
           "label": "Green Trust Loan Program",
-          "dollars": 10994,
-          "percent": 0.000152244157
+          "dollars": 10994
         },
         {
           "label": "Interest on Notes",
-          "dollars": 40000,
-          "percent": 0.000553917253
+          "dollars": 40000
         },
         {
           "label": "Bergen County Improvement Authority",
-          "dollars": 47500,
-          "percent": 0.0006577767379
+          "dollars": 47500
         },
         {
           "label": "Interest on Bonds",
-          "dollars": 345000,
-          "percent": 0.004777536307
+          "dollars": 345000
         },
         {
           "label": "Payment of Bond Anticipation Notes and Capital Notes",
-          "dollars": 408000,
-          "percent": 0.00564995598
+          "dollars": 408000
         },
         {
           "label": "Payment of Bond Prinicpal",
-          "dollars": 1390000,
-          "percent": 0.01924862454
+          "dollars": 1390000
         }
       ]
     },
     {
       "label": "Sewer Services Charges Contractual",
       "description": "",
-      "percent": 0.02339,
       "categories": [
         {
           "label": "Passaic Valley Trunk Sewer",
-          "dollars": 520000,
-          "percent": 0.007200924288
+          "dollars": 520000
         },
         {
           "label": "Bergen County Utility Authority",
-          "dollars": 1168750,
-          "percent": 0.01618476973
+          "dollars": 1168750
         }
       ]
     },
     {
       "label": "Capital Improvements",
       "description": "",
-      "percent": 0.02001,
       "categories": [
         {
           "label": "HVAC and Other Building Improvements to Borough Hall and Police Headquarters",
-          "dollars": 700000,
-          "percent": 0.009693551927
+          "dollars": 700000
         },
         {
           "label": "Capital Improvement Fund",
-          "dollars": 744700,
-          "percent": 0.01031255446
+          "dollars": 744700
         }
       ]
     },
     {
       "label": "General Government Functions",
       "description": "",
-      "percent": 0.01989,
       "categories": [
         {
           "label": "Mayor and Council",
-          "dollars": 23500,
-          "percent": 0.0003254263861
+          "dollars": 23500
         },
         {
           "label": "Auditing and Accounting Services",
-          "dollars": 25000,
-          "percent": 0.0003461982831
+          "dollars": 25000
         },
         {
           "label": "Computerized Data Processing",
-          "dollars": 40000,
-          "percent": 0.000553917253
+          "dollars": 40000
         },
         {
           "label": "Engineering Services and Costs",
-          "dollars": 95000,
-          "percent": 0.001315553476
+          "dollars": 95000
         },
         {
           "label": "Assessment of Taxes",
-          "dollars": 116350,
-          "percent": 0.00161120681
+          "dollars": 116350
         },
         {
           "label": "Collection of Taxes",
-          "dollars": 169080,
-          "percent": 0.002341408228
+          "dollars": 169080
         },
         {
           "label": "Legal Services and Costs",
-          "dollars": 180000,
-          "percent": 0.002492627638
+          "dollars": 180000
         },
         {
           "label": "General Administration",
-          "dollars": 242585,
-          "percent": 0.00335930042
+          "dollars": 242585
         },
         {
           "label": "Municipal Clerk's Office",
-          "dollars": 264737,
-          "percent": 0.003666059795
+          "dollars": 264737
         },
         {
           "label": "Financial Administration",
-          "dollars": 279794,
-          "percent": 0.003874568097
+          "dollars": 279794
         }
       ]
     },
     {
       "label": "Utility Expenses/Bulk Purchases",
       "description": "",
-      "percent": 0.01532,
       "categories": [
         {
           "label": "Fuel Oil",
-          "dollars": 30000,
-          "percent": 0.0004154379397
+          "dollars": 30000
         },
         {
           "label": "Water",
-          "dollars": 55000,
-          "percent": 0.0007616362228
+          "dollars": 55000
         },
         {
           "label": "Telephone",
-          "dollars": 75000,
-          "percent": 0.001038594849
+          "dollars": 75000
         },
         {
           "label": "Street Lighting",
-          "dollars": 265000,
-          "percent": 0.003669701801
+          "dollars": 265000
         },
         {
           "label": "Gasoline",
-          "dollars": 275000,
-          "percent": 0.003808181114
+          "dollars": 275000
         },
         {
           "label": "Electricity",
-          "dollars": 406500,
-          "percent": 0.005629184083
+          "dollars": 406500
         }
       ]
     },
     {
       "label": "Maintenance of Free Public Library",
       "description": "",
-      "dollars": 979200,
-      "percent": 0.01356
+      "dollars": 979200
     },
     {
       "label": "Health and Welfare",
       "description": "",
-      "percent": 0.00830,
       "categories": [
         {
           "label": "Animal Control Services",
-          "dollars": 22440,
-          "percent": 0.0003107475789
+          "dollars": 22440
         },
         {
           "label": "Senior Citizen Center (55 Kip)",
-          "dollars": 55000,
-          "percent": 0.0007616362228
+          "dollars": 55000
         },
         {
           "label": "Administration of Public Assistance",
-          "dollars": 96682,
-          "percent": 0.001338845696
+          "dollars": 96682
         },
         {
           "label": "Board of Health",
-          "dollars": 425473,
-          "percent": 0.005891920884
+          "dollars": 425473
         }
       ]
     },
     {
       "label": "Landfill Soild Waste Disposal Costs",
-      "dollars": 590000,
-      "percent": 0.0081703
+      "dollars": 590000
     },
     {
       "label": "Recreation Department",
-      "dollars": 580916,
-      "percent": 0.008044484873
+      "dollars": 580916
     },
     {
       "label": "Construction Code Official",
-      "dollars": 307757,
-      "percent": 0.0042617978
+      "dollars": 307757
     },
     {
       "label": "Salary Attrition (Terminal Leave)",
-      "dollars": 250000,
-      "percent": 0.003461982831
+      "dollars": 250000
     },
     {
       "label": "Public and Private Programs Offset by Revenues",
       "description": "",
-      "percent": 0.00327,
       "categories": [
         {
           "label": "Cops in Shops",
-          "dollars": 1218,
-          "percent": 0.00001686678035
+          "dollars": 1218
         },
         {
           "label": "Labor Day Street Fair",
-          "dollars": 2550,
-          "percent": 0.00003531222488
+          "dollars": 2550
         },
         {
           "label": "Bergen County Local Arts Program",
-          "dollars": 3080,
-          "percent": 0.00004265162848
+          "dollars": 3080
         },
         {
           "label": "DCS - Recreation for Individuals with Disabilities",
-          "dollars": 4000,
-          "percent": 0.0000553917253
+          "dollars": 4000
         },
         {
           "label": "Alcohol Dependency",
-          "dollars": 4375,
-          "percent": 0.00006058469954
+          "dollars": 4375
         },
         {
           "label": "Recycling Tonnage",
-          "dollars": 19295,
-          "percent": 0.0002671958349
+          "dollars": 19295
         },
         {
           "label": "Sustainable New Jersey",
-          "dollars": 20000,
-          "percent": 0.0002769586265
+          "dollars": 20000
         },
         {
           "label": "NJDEP - Clean Communities Program",
-          "dollars": 32417,
-          "percent": 0.0004489083897
+          "dollars": 32417
         },
         {
           "label": "New Jersey Transportation Trust Fund Authority Act",
-          "dollars": 149000,
-          "percent": 0.002063341767
+          "dollars": 149000
         }
       ]
     },
     {
       "label": "Additional Government Programs",
-      "dollars": 336525,
-      "percent": 0.0046602
+      "dollars": 336525
     }
   ]
 }
