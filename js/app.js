@@ -10,22 +10,18 @@ app.controller('TaxReceiptCtrl', function($scope, $http) {
 	};
 });
 
-
-
 app.directive('receipt.category', function() {
 	return {
 		templateUrl: 'templates/category.html',
 		link: function(scope, elem, attrs) {
-			scope.tooltip = {
-
-			}
+			scope.tooltip = {};
 			scope.toggleCategory = function(category) {
 				var toggled = !scope.category.show;
 				angular.forEach(scope.budget.categories, function(cat) {
 					if(cat.show) cat.show = false;
 				});
 				scope.category.show = toggled;
-			}
+			};
 		}
 	}
 })

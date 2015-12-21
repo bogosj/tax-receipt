@@ -5,7 +5,7 @@
 		<div receipt.data-bar></div>
 	</td>
 	<td>{{(category.percent*100).toFixed(2)}}%</td>
-	<td ng-show="tax.income">{{(tax.income*category.percent) | currency : '$' : 2}}</td>
+	<td ng-show="tax">{{(tax*category.percent) | currency : '$' : 2}}</td>
 </tr>
 
 <tr class="subcategory" ng-repeat="sub in category.categories | orderBy:'percent':true" ng-show="category.show" ng-animate=" 'animate' ">
@@ -15,5 +15,5 @@
 		<div receipt.data-bar></div>
 	</td>
 	<td>{{(sub.percent*100).toFixed(2)}}%</td>
-	<td ng-show="tax.income">{{(tax.income*sub.percent) | currency : '$' : 2}}</td>
+	<td ng-show="tax">{{(tax*sub.percent) | currency : '$' : 2}}</td>
 </tr>
