@@ -1,0 +1,19 @@
+<tr class="category" ng-click="toggleCategory()">
+	<td><i ng-if="category.categories.length" class="fa {{category.show? 'fa-minus' : 'fa-plus'}}"></i></td>
+	<td>
+		{{category.label}}
+		<div receipt.data-bar></div>
+	</td>
+	<td>{{(category.percent*100).toFixed(2)}}%</td>
+	<td ng-show="tax.income">{{(tax.income*category.percent) | currency : '$' : 2}}</td>
+</tr>
+
+<tr class="subcategory" ng-repeat="sub in category.categories | orderBy:'percent':true" ng-show="category.show" ng-animate=" 'animate' ">
+	<td></td>
+	<td>
+		{{sub.label}}
+		<div receipt.data-bar></div>
+	</td>
+	<td>{{(sub.percent*100).toFixed(2)}}%</td>
+	<td ng-show="tax.income">{{(tax.income*sub.percent) | currency : '$' : 2}}</td>
+</tr>
