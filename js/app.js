@@ -6,7 +6,7 @@ app.controller('TaxReceiptCtrl', function($scope, $http) {
 	$http.get('data/budget.json').success(function(data) { $scope.budget = angular.fromJson(data); });
 	$scope.tax = null;
 	$scope.calculateReceipt = function() {
-		$scope.tax = angular.copy($scope.calculate);
+		$scope.tax = angular.copy($scope.property_tax);
 	};
 });
 

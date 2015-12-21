@@ -29,30 +29,15 @@
 				</header>
 
 				<div class="row configuration">
-					<div class="incometaxinput">
+					<div class="propertytaxinput">
 						<div class="input-group">
-							<input type="number" class="form-control currency input-lg" placeholder="Property Tax" ng-model="calculate.income"/>
+							<input type="number" class="form-control currency input-lg" placeholder="Property Tax" ng-model="property_tax"/>
 							<span class="input-group-btn">
 								<a class="btn btn-danger btn-lg" ng-click="calculateReceipt()">Calculate</a>
 							</span>
 						</div>
 					</div>
 				</div>
-
-
-				<!-- Intro Table -->
-				<table class="table table-intro table-subtotal">
-					<tbody>
-						<tr>
-							<th class="data-title">Programs &amp; Services</th>
-							<th class="data-subtitle" ng-if="(tax.income)">Your Tax Payment</th>
-						</tr>
-						<tr ng-if="(tax.income)">
-							<td class="data-title">Income Tax</td>
-							<td class="data-subtotal">{{tax.income | currency : '$' : 2}}</td>
-						</tr>
-					</tbody>
-				</table>
 
 				<!-- Main Category Table -->
 				<table class="table table-hover table-categories">
