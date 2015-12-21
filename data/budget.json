@@ -180,8 +180,10 @@
           "dollars": 1026000,
           "percent": 0.01420797754
         },
+        
       ]
-    },{
+    },
+    {
       "label": "Municipal Debt Service",
       "decription": "",
       "percent": 0.03104,
