@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+		<title>Rutherford Budget</title>
 	</head>
 
 	<body ng-controller="TaxReceiptCtrl" class="bg-gray">
@@ -24,14 +24,14 @@
 		<div class="wrapper">
 			<div class="container boxed">
 				<header>
-					<h1>Your 2014 Taxpayer Receipt</h1>
-					<h3>Understand how and where your tax dollars are being spent. Enter your 2014 income tax info to get started.</h3>
+					<h1>Your 2015 Taxpayer Receipt</h1>
+					<h3>Understand how and where your tax dollars are being spent. Enter your 2015 property tax info to get started.</h3>
 				</header>
 
 				<div class="row configuration">
 					<div class="incometaxinput">
 						<div class="input-group">
-							<input type="number" class="form-control currency input-lg" placeholder="Income Tax" ng-model="calculate.income"/>
+							<input type="number" class="form-control currency input-lg" placeholder="Property Tax" ng-model="calculate.income"/>
 							<span class="input-group-btn">
 								<a class="btn btn-danger btn-lg" bs-modal data-template="calculate-modal.html" data-container="body">Calculate</a>
 							</span>
@@ -58,65 +58,7 @@
 				<table class="table table-hover table-categories">
 					<tbody receipt.category ng-repeat="category in budget.categories" ng-category="category"></tbody>
 				</table>
-
-				<!-- Outtro Table -->
-				<table class="table table-outtro table-subtotal" ng-if="(tax.income || tax.social || tax.medicare)">
-					<tbody>
-						<tr ng-if="(tax.social)">
-							<td class="data-title">Social Security Tax</td>
-							<td class="data-subtotal">{{tax.social | currency : '$' : 2}}</td>
-						</tr>
-						<tr ng-if="(tax.medicare)">
-							<td class="data-title">Medicare Tax</td>
-							<td class="data-subtotal">{{tax.medicare | currency : '$' : 2}}</td>
-						</tr>
-						<tr class="tax-total">
-							<th class="data-title">Total Income and Payroll Taxes You Paid</td>
-							<th class="data-subtotal">{{tax.total | currency : '$' : 2}}</td>
-						</tr>
-					</tbody>
-				</table>
 			</div>
 		</div>
 	</body>
 </html>
-
-
-<script type="text/ng-template" id="calculate-modal.html">
-	<div class="modal" tabindex="-1" role="dialog">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" ng-click="$hide()">&times;</button>
-					<h4 class="modal-title">Personalize Tax Receipt</h4>
-				</div>
-				<div class="modal-body form-horizontal">
-					<div class="form-group">
-						<label for="modal-income-tax" class="col-sm-4 control-label">Income Tax</label>
-						<div class="col-sm-8">
-							<input type="number" class="form-control currency" id="modal-income-tax" placeholder="Income taxes you paid in 2014" ng-model="calculate.income" />
-						</div>
-					</div>
-
-					<div class="form-group">
-						<label for="modal-social-tax" class="col-sm-4 control-label">Social Security Tax</label>
-						<div class="col-sm-8">
-							<input type="number" class="form-control currency" id="modal-social-tax" placeholder="Social Security taxes you paid in 2014" ng-model="calculate.social" />
-						</div>
-					</div>
-
-					<div class="form-group">
-						<label for="modal-medicare-tax" class="col-sm-4 control-label">Medicare Tax</label>
-						<div class="col-sm-8">
-							<input type="number" class="form-control currency" id="modal-medicare-tax" placeholder="Medicare taxes you paid in 2014" ng-model="calculate.medicare" />
-						</div>
-					</div>
-
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary btn-lg" ng-click="calculateReceipt(true, $hide)">Calculate</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</script>
