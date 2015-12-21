@@ -4,17 +4,14 @@
   "categories": [
     {
       "label": "School Taxes",
-      "description": "",
       "dollars": 37689928
     },
     {
       "label": "County Taxes",
-      "description": "",
       "dollars": 5966052
     },
     {
       "label": "Public Safety",
-      "description": "",
       "categories": [
         {
           "label": "Public Defender",
@@ -64,7 +61,6 @@
     },
     {
       "label": "Insurance",
-      "description": "",
       "categories": [
         {
           "label": "Other Insurance Premiums",
@@ -90,7 +86,6 @@
     },
     {
       "label": "Public Works",
-      "description": "",
       "categories": [
         {
           "label": "Sewer System",
@@ -120,7 +115,6 @@
     },
     {
       "label": "Statutory Expenditures",
-      "description": "",
       "categories": [
         {
           "label": "Unemployment Insurance",
@@ -180,7 +174,6 @@
     },
     {
       "label": "Sewer Services Charges Contractual",
-      "description": "",
       "categories": [
         {
           "label": "Passaic Valley Trunk Sewer",
@@ -194,7 +187,6 @@
     },
     {
       "label": "Capital Improvements",
-      "description": "",
       "categories": [
         {
           "label": "HVAC and Other Building Improvements to Borough Hall and Police Headquarters",
@@ -208,7 +200,6 @@
     },
     {
       "label": "General Government Functions",
-      "description": "",
       "categories": [
         {
           "label": "Mayor and Council",
@@ -254,7 +245,6 @@
     },
     {
       "label": "Utility Expenses/Bulk Purchases",
-      "description": "",
       "categories": [
         {
           "label": "Fuel Oil",
@@ -284,12 +274,10 @@
     },
     {
       "label": "Maintenance of Free Public Library",
-      "description": "",
       "dollars": 979200
     },
     {
       "label": "Health and Welfare",
-      "description": "",
       "categories": [
         {
           "label": "Animal Control Services",
@@ -327,7 +315,6 @@
     },
     {
       "label": "Public and Private Programs Offset by Revenues",
-      "description": "",
       "categories": [
         {
           "label": "Cops in Shops",
