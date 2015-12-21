@@ -1,152 +1,351 @@
 {
-	"label": "Total",
-	"percent": 1,
-	"categories": [
-		{
-			"label": "School Taxes",
-			"description": "",
-			"percent": 0.5219
-		},{
-			"label": "County Taxes",
-			"description": "",
-			"percent": 0.0826
-		},{
-			"label": "Public Safety",
-			"description": "",
-			"percent": 0.08331,
-			"categories": [
-				{"label": "Public Defender", "percent": 0.00003461982831},
-				{"label": "Municipal Prosecutor", "percent": 0.0001066290712},
-				{"label": "First Aid Ambulance Corp Contribution", "percent": 0.0001246313819},
-				{"label": "Emergency Management", "percent": 0.0001966406248},
-				{"label": "Police Dispatch / 911", "percent": 0.0002507860363},
-				{"label": "Life Hazard Use Fees - Fire Official", "percent": 0.0003127832248},
-				{"label": "Uniform Fire Safety Act - Fire Official", "percent": 0.001135530369},
-				{"label": "Municipal Court", "percent": 0.002057484092},
-				{"label": "Fire Official", "percent": 0.002410273991},
-				{"label": "Fire", "percent": 0.005316913232},
-				{"label": "Police", "percent": 0.07136427548},
-			]
-		},{
-			"label": "Insurance",
-			"description": "",
-			"percent": 0.07302,
-			"categories": [
-				{"label": "Other Insurance Premiums", "percent": 0.0002769586265},
-				{"label": "Health Benefit Waiver Costs", "percent": 0.001038594849},
-				{"label": "General Liability Insurance", "percent": 0.007041673078},
-				{"label": "Workers Compensation Insurance", "percent": 0.008066419996},
-				{"label": "Employee Group Insurance", "percent": 0.05659267329},
-			]
-		},{
-			"label": "Public Works",
-			"description": "",
-			"percent": 0.04392,
-			"categories": [
-				{"label": "Sewer System", "percent": 0.0006314656684},
-				{"label": "Shade Tree Division", "percent": 0.004397119785},
-				{"label": "Recycling", "percent": 0.004629945055},
-				{"label": "Buldings and Grounds", "percent": 0.007113059164},
-				{"label": "Garbage and Trash Removal", "percent": 0.008712495232},
-				{"label": "Street and Road Maintenance", "percent": 0.0184405562},
-			]
-		},{
-			"label": "Statutory Expenditures",
-			"description": "",
-			"percent": 0.03183,
-			"categories": [
-				{"label": "Green Trust Loan Program", "percent": 0.000152244157},
-				{"label": "Interest on Notes", "percent": 0.000553917253},
-				{"label": "Bergen County Improvement Authority", "percent": 0.0006577767379},
-				{"label": "Interest on Bonds", "percent": 0.004777536307},
-				{"label": "Payment of Bond Anticipation Notes and Capital Notes", "percent": 0.00564995598},
-				{"label": "Payment of Bond Prinicpal", "percent": 0.01924862454},
-			]
-		},{
-			"label": "Sewer Services Charges Contractual",
-			"description": "",
-			"percent": 0.02339,
-			"categories": [
-				{"label": "Passaic Valley Trunk Sewer", "percent": 0.007200924288},
-				{"label": "Bergen County Utility Authority", "percent": 0.01618476973},
-			]
-		},{
-			"label": "Capital Improvements",
-			"description": "",
-			"percent": 0.02001,
-			"categories": [
-				{"label": "HVAC and Other Building Improvements to Borough Hall and Police Headquarters", "percent": 0.009693551927},
-				{"label": "Capital Improvement Fund", "percent": 0.01031255446},
-			]
-		},{
-			"label": "General Government Functions",
-			"description": "",
-			"percent": 0.01989,
-			"categories": [
-				{"label": "Mayor and Council", "percent": 0.0003254263861},
-				{"label": "Auditing and Accounting Services", "percent": 0.0003461982831},
-				{"label": "Computerized Data Processing", "percent": 0.000553917253},
-				{"label": "Engineering Services and Costs", "percent": 0.001315553476},
-				{"label": "Assessment of Taxes", "percent": 0.00161120681},
-				{"label": "Collection of Taxes", "percent": 0.002341408228},
-				{"label": "Legal Services and Costs", "percent": 0.002492627638},
-				{"label": "General Administration", "percent": 0.00335930042},
-				{"label": "Municipal Clerk's Office", "percent": 0.003666059795},
-				{"label": "Financial Administration", "percent": 0.003874568097},
-			]
-		},{
-			"label": "Utility Expenses/Bulk Purchases",
-			"description": "",
-			"percent": 0.01532,
-			"categories": [
-				{"label": "Fuel Oil", "percent": 0.0004154379397},
-				{"label": "Water", "percent": 0.0007616362228},
-				{"label": "Telephone", "percent": 0.001038594849},
-				{"label": "Street Lighting", "percent": 0.003669701801},
-				{"label": "Gasoline", "percent": 0.003808181114},
-				{"label": "Electricity", "percent": 0.005629184083},
-			]
-		},{
-			"label": "Maintenance of Free Public Library",
-			"description": "",
-			"percent": 0.01356
-		},{
-			"label": "Health and Welfare",
-			"description": "",
-			"percent": 0.00830,
-			"categories": [
-				{"label": "Animal Control Services", "percent": 0.0003107475789},
-				{"label": "Senior Citizen Center (55 Kip)", "percent": 0.0007616362228},
-				{"label": "Administration of Public Assistance", "percent": 0.001338845696},
-				{"label": "Board of Health", "percent": 0.005891920884},
-			]
-		},{
-			"label": "Recreation Department",
-			"percent": 0.008044484873
-		},{
-			"label": "Construction Code Official",
-			"percent": 0.0042617978
-		},{
-			"label": "Salary Attrition (Terminal Leave)",
-			"percent": 0.003461982831
-		},{
-			"label": "Public and Private Programs Offset by Revenues",
-			"description": "",
-			"percent": 0.00327,
-			"categories": [
-				{"label": "Cops in Shops", "percent": 0.00001686678035},
-				{"label": "Labor Day Street Fair", "percent": 0.00003531222488},
-				{"label": "Bergen County Local Arts Program", "percent": 0.00004265162848},
-				{"label": "DCS - Recreation for Individuals with Disabilities", "percent": 0.0000553917253},
-				{"label": "Alcohol Dependency", "percent": 0.00006058469954},
-				{"label": "Recycling Tonnage", "percent": 0.0002671958349},
-				{"label": "Sustainable New Jersey", "percent": 0.0002769586265},
-				{"label": "NJDEP - Clean Communities Program", "percent": 0.0004489083897},
-				{"label": "New Jersey Transportation Trust Fund Authority Act", "percent": 0.002063341767},
-			]
-		},{
-			"label": "Additional Governmet Programs",
-			"percent": 0.0046602
-		}
-	]
+  "label": "Total",
+  "percent": 1,
+  "categories": [
+    {
+      "label": "School Taxes",
+      "description": "",
+      "percent": 0.5219
+    },
+    {
+      "label": "County Taxes",
+      "description": "",
+      "percent": 0.0826
+    },
+    {
+      "label": "Public Safety",
+      "description": "",
+      "percent": 0.08331,
+      "categories": [
+        {
+          "label": "Public Defender",
+          "percent": 0.00003461982831
+        },
+        {
+          "label": "Municipal Prosecutor",
+          "percent": 0.0001066290712
+        },
+        {
+          "label": "First Aid Ambulance Corp Contribution",
+          "percent": 0.0001246313819
+        },
+        {
+          "label": "Emergency Management",
+          "percent": 0.0001966406248
+        },
+        {
+          "label": "Police Dispatch / 911",
+          "percent": 0.0002507860363
+        },
+        {
+          "label": "Life Hazard Use Fees - Fire Official",
+          "percent": 0.0003127832248
+        },
+        {
+          "label": "Uniform Fire Safety Act - Fire Official",
+          "percent": 0.001135530369
+        },
+        {
+          "label": "Municipal Court",
+          "percent": 0.002057484092
+        },
+        {
+          "label": "Fire Official",
+          "percent": 0.002410273991
+        },
+        {
+          "label": "Fire",
+          "percent": 0.005316913232
+        },
+        {
+          "label": "Police",
+          "percent": 0.07136427548
+        }
+      ]
+    },
+    {
+      "label": "Insurance",
+      "description": "",
+      "percent": 0.07302,
+      "categories": [
+        {
+          "label": "Other Insurance Premiums",
+          "percent": 0.0002769586265
+        },
+        {
+          "label": "Health Benefit Waiver Costs",
+          "percent": 0.001038594849
+        },
+        {
+          "label": "General Liability Insurance",
+          "percent": 0.007041673078
+        },
+        {
+          "label": "Workers Compensation Insurance",
+          "percent": 0.008066419996
+        },
+        {
+          "label": "Employee Group Insurance",
+          "percent": 0.05659267329
+        }
+      ]
+    },
+    {
+      "label": "Public Works",
+      "description": "",
+      "percent": 0.04392,
+      "categories": [
+        {
+          "label": "Sewer System",
+          "percent": 0.0006314656684
+        },
+        {
+          "label": "Shade Tree Division",
+          "percent": 0.004397119785
+        },
+        {
+          "label": "Recycling",
+          "percent": 0.004629945055
+        },
+        {
+          "label": "Buldings and Grounds",
+          "percent": 0.007113059164
+        },
+        {
+          "label": "Garbage and Trash Removal",
+          "percent": 0.008712495232
+        },
+        {
+          "label": "Street and Road Maintenance",
+          "percent": 0.0184405562
+        }
+      ]
+    },
+    {
+      "label": "Statutory Expenditures",
+      "description": "",
+      "percent": 0.03183,
+      "categories": [
+        {
+          "label": "Green Trust Loan Program",
+          "percent": 0.000152244157
+        },
+        {
+          "label": "Interest on Notes",
+          "percent": 0.000553917253
+        },
+        {
+          "label": "Bergen County Improvement Authority",
+          "percent": 0.0006577767379
+        },
+        {
+          "label": "Interest on Bonds",
+          "percent": 0.004777536307
+        },
+        {
+          "label": "Payment of Bond Anticipation Notes and Capital Notes",
+          "percent": 0.00564995598
+        },
+        {
+          "label": "Payment of Bond Prinicpal",
+          "percent": 0.01924862454
+        }
+      ]
+    },
+    {
+      "label": "Sewer Services Charges Contractual",
+      "description": "",
+      "percent": 0.02339,
+      "categories": [
+        {
+          "label": "Passaic Valley Trunk Sewer",
+          "percent": 0.007200924288
+        },
+        {
+          "label": "Bergen County Utility Authority",
+          "percent": 0.01618476973
+        }
+      ]
+    },
+    {
+      "label": "Capital Improvements",
+      "description": "",
+      "percent": 0.02001,
+      "categories": [
+        {
+          "label": "HVAC and Other Building Improvements to Borough Hall and Police Headquarters",
+          "percent": 0.009693551927
+        },
+        {
+          "label": "Capital Improvement Fund",
+          "percent": 0.01031255446
+        }
+      ]
+    },
+    {
+      "label": "General Government Functions",
+      "description": "",
+      "percent": 0.01989,
+      "categories": [
+        {
+          "label": "Mayor and Council",
+          "percent": 0.0003254263861
+        },
+        {
+          "label": "Auditing and Accounting Services",
+          "percent": 0.0003461982831
+        },
+        {
+          "label": "Computerized Data Processing",
+          "percent": 0.000553917253
+        },
+        {
+          "label": "Engineering Services and Costs",
+          "percent": 0.001315553476
+        },
+        {
+          "label": "Assessment of Taxes",
+          "percent": 0.00161120681
+        },
+        {
+          "label": "Collection of Taxes",
+          "percent": 0.002341408228
+        },
+        {
+          "label": "Legal Services and Costs",
+          "percent": 0.002492627638
+        },
+        {
+          "label": "General Administration",
+          "percent": 0.00335930042
+        },
+        {
+          "label": "Municipal Clerk's Office",
+          "percent": 0.003666059795
+        },
+        {
+          "label": "Financial Administration",
+          "percent": 0.003874568097
+        }
+      ]
+    },
+    {
+      "label": "Utility Expenses/Bulk Purchases",
+      "description": "",
+      "percent": 0.01532,
+      "categories": [
+        {
+          "label": "Fuel Oil",
+          "percent": 0.0004154379397
+        },
+        {
+          "label": "Water",
+          "percent": 0.0007616362228
+        },
+        {
+          "label": "Telephone",
+          "percent": 0.001038594849
+        },
+        {
+          "label": "Street Lighting",
+          "percent": 0.003669701801
+        },
+        {
+          "label": "Gasoline",
+          "percent": 0.003808181114
+        },
+        {
+          "label": "Electricity",
+          "percent": 0.005629184083
+        }
+      ]
+    },
+    {
+      "label": "Maintenance of Free Public Library",
+      "description": "",
+      "percent": 0.01356
+    },
+    {
+      "label": "Health and Welfare",
+      "description": "",
+      "percent": 0.00830,
+      "categories": [
+        {
+          "label": "Animal Control Services",
+          "percent": 0.0003107475789
+        },
+        {
+          "label": "Senior Citizen Center (55 Kip)",
+          "percent": 0.0007616362228
+        },
+        {
+          "label": "Administration of Public Assistance",
+          "percent": 0.001338845696
+        },
+        {
+          "label": "Board of Health",
+          "percent": 0.005891920884
+        }
+      ]
+    },
+    {
+      "label": "Recreation Department",
+      "percent": 0.008044484873
+    },
+    {
+      "label": "Construction Code Official",
+      "percent": 0.0042617978
+    },
+    {
+      "label": "Salary Attrition (Terminal Leave)",
+      "percent": 0.003461982831
+    },
+    {
+      "label": "Public and Private Programs Offset by Revenues",
+      "description": "",
+      "percent": 0.00327,
+      "categories": [
+        {
+          "label": "Cops in Shops",
+          "percent": 0.00001686678035
+        },
+        {
+          "label": "Labor Day Street Fair",
+          "percent": 0.00003531222488
+        },
+        {
+          "label": "Bergen County Local Arts Program",
+          "percent": 0.00004265162848
+        },
+        {
+          "label": "DCS - Recreation for Individuals with Disabilities",
+          "percent": 0.0000553917253
+        },
+        {
+          "label": "Alcohol Dependency",
+          "percent": 0.00006058469954
+        },
+        {
+          "label": "Recycling Tonnage",
+          "percent": 0.0002671958349
+        },
+        {
+          "label": "Sustainable New Jersey",
+          "percent": 0.0002769586265
+        },
+        {
+          "label": "NJDEP - Clean Communities Program",
+          "percent": 0.0004489083897
+        },
+        {
+          "label": "New Jersey Transportation Trust Fund Authority Act",
+          "percent": 0.002063341767
+        }
+      ]
+    },
+    {
+      "label": "Additional Governmet Programs",
+      "percent": 0.0046602
+    }
+  ]
 }
