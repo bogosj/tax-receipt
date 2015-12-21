@@ -1,0 +1,187 @@
+{
+	"label": "Total",
+	"percent": 1,
+	"categories": [
+		{
+			"label": "Health Care",
+			"description": "Spending on Medicare Supplementary Medical Insurance and the prescription drug benefit, Medicaid, Children's Health Insurance Program, food safety, disease control and additional health care activities. Because this calculator focuses on how income taxes are spent, spending from Medicare taxes is excluded. Additionally, health care for the armed forces is included under National Defense and health care for veterans is included under Veterans Benefits. (Corresponds to budget functions 550 and 570)",
+			"percent": 0.2749,
+			"path": "healthcare.html",
+			"categories": [
+				{
+					"label": "Medicaid and Children's Health Insurance Program (CHIP)",
+					"percent": 0.1231
+				},{
+					"label": "Medicare doctor payments and prescription drug payments",
+					"percent": 0.1127
+				},{
+					"label": "Additional health care activities",
+					"percent": 0.0161
+				},{
+					"label": "Health research and food safety",
+					"percent": 0.0138
+				},{
+					"label": "Disease control and public health services",
+					"percent": 0.0091
+				}
+			]
+		},{
+			"label": "National Defense",
+			"description": "Spending on military personnel, operations, procurement and other activities critical to our national defense. (Corresponds to budget function 050)",
+			"percent": 0.2391,
+			"categories": [
+				{
+					"label": "Ongoing operations, equipment, and supplies",
+					"percent": 0.0969
+				},{
+					"label": "Research, development, weapons, and construction",
+					"percent": 0.0722
+				},{
+					"label": "Military personnel salaries and benefits",
+					"percent": 0.0595
+				},{
+					"label": "Atomic energy defense activities",
+					"percent": 0.0069
+				},{
+					"label": "Defense-related FBI activities and additional national defense",
+					"percent": 0.0036
+				}
+			]
+		},{
+			"label": "Job and Family Security",
+			"description": "Spending on unemployment insurance, food assistance, relevant tax credits, and other programs designed for income security. Because this calculator focuses on how income taxes are spent, spending from unemployment insurance taxes is excluded. (Corresponds to budget function 600)",
+			"percent": 0.1817,
+			"categories": [
+				{
+					"label": "Federal military and civilian employee retirement and disability",
+					"percent": 0.0533
+				},{
+					"label": "Food and nutrition assistance",
+					"percent": 0.0408
+				},{
+					"label": "Earned income and child tax credits",
+					"percent": 0.0323
+				},{
+					"label": "Supplemental Security Income",
+					"percent": 0.0219
+				},{
+					"label": "Housing assistance",
+					"percent": 0.0189
+				},{
+					"label": "Temporary Assistance for Needy Families",
+					"percent": 0.0067
+				},{
+					"label": "Child care, foster care, and adoption support",
+					"percent": 0.0063
+				},{
+					"label": "Railroad retirement and additional income security",
+					"percent": 0.0016
+				}
+			]
+		},{
+			"label": "Net Interest",
+			"description": "Spending on interest, including interest on Treasury debt securities. (Corresponds to budget function 900)",
+			"percent": 0.0907
+		},{
+			"label": "Veterans Benefits",
+			"description": "Spending on benefits for veterans, including health care, disability compensation, pension, education, and home loans. (Corresponds to budget function 700)",
+			"percent": 0.0593,
+			"categories": [
+				{
+					"label": "Income and housing support",
+					"percent": 0.0289
+				},{
+					"label": "Health care",
+					"percent": 0.0223
+				},{
+					"label": "Education, training, and additional veterans benefits",
+					"percent": 0.0081
+				}
+			]
+		},{
+			"label": "Education and Job Training",
+			"description": "Spending on student financial aid, special education, job training, and other educational and job activities. (Corresponds to budget function 500)",
+			"percent": 0.0359,
+			"categories": [
+				{
+					"label": "Elementary, secondary, and vocational education",
+					"percent": 0.0162
+				},{
+					"label": "Employment training for people with disabilities and additional education and job services",
+					"percent": 0.0090
+				},{
+					"label": "Student financial aid for college",
+					"percent": 0.0080
+				},{
+					"label": "Job training and employment services",
+					"percent": 0.0028
+				}
+			]
+		},{
+			"label": "Immigration, Law Enforcement, and Administration of Justice",
+			"description": "Spending on border security, immigration enforcement, litigation, the federal judiciary, and other activities related to the administration of justice. (Corresponds to budget function 750)",
+			"percent": 0.0200
+		},{
+			"label": "International Affairs",
+			"description": "Spending on embassies, exchange activities, humanitarian assistance, and other activities related to international affairs. (Corresponds to budget function 150)",
+			"percent": 0.0185,
+			"categories": [
+				{
+					"label": "Development and humanitarian assistance",
+					"percent": 0.0093
+				},{
+					"label": "Foreign affairs, embassies, and additional international affairs",
+					"percent": 0.0047
+				},{
+					"label": "Security assistance",
+					"percent": 0.0045
+				}
+			]
+		},{
+			"label": "Natural Resources, Energy, and Environment",
+			"description": "Spending on water management, energy supply, pollution control, and other activities related to natural resources, energy, and the environment. (Corresponds to budget functions 270 and 300)",
+			"percent": 0.0164,
+			"categories": [
+				{
+					"label": "Pollution control and other natural resources, energy, and environment",
+					"percent": 0.0075
+				},{
+					"label": "Water and land management",
+					"percent": 0.0070
+				},{
+					"label": "Energy supply and conservation",
+					"percent": 0.0020
+				}
+			]
+		},{
+			"label": "Science, Space, and Technology Programs",
+			"description": "Spending on general science, basic research, and space flight. (Corresponds to budget function 250)",
+			"percent": 0.0113,
+			"categories": [
+				{
+					"label": "NASA",
+					"percent": 0.0066
+				},{
+					"label": "National Science Foundation, additional science research, and laboratories",
+					"percent": 0.0048
+				}
+			]
+		},{
+			"label": "Agriculture",
+			"description": "Spending on agricultural activities, including research, crop insurance, and agricultural subsidies. (Corresponds to budget function 350)",
+			"percent": 0.0097
+		},{
+			"label": "Community, Area, and Regional Development",
+			"description": "Spending on activities to strengthen communities, including spending on the Community Development Fund. Other major accounts are Operation of Indian Programs, the Neighborhood Stabilization Program, and the Rural Water and Waste Disposal Program Account. (Corresponds to budget subfunctions 451 and 452)",
+			"percent": 0.0043
+		},{
+			"label": "Response to Natural Disasters",
+			"description": "Spending on natural disaster response and insurance, including Small Business Administration disaster loans and FEMA grants. (Corresponds to budget subfunction 453)",
+			"percent": 0.0039
+		},{
+			"label": "Additional Government Programs",
+			"description": "Spending on all other government programs, including transportation, promotion of commerce, mortgage credit, and governmental administration. Because this calculator focuses on how income taxes are spent, spending from Social Security and Highway Trust Fund taxes is excluded.",
+			"percent": 0.0342
+		}
+	]
+}

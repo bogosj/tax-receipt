@@ -1,0 +1,258 @@
+/********************
+ * COLORS and FONTS *
+ ********************/
+@white: #fff;
+@extra-light-gray: #f5f5f5;
+@light-gray: #ccc;
+@dark-gray: #999;
+@black: #333;
+
+@light-blue: #336699;
+@dark-blue: #003366;
+@green: #79bb20;
+@light-green: #bcdd8f;
+@mint: #bcdd8f;
+
+@bar-dark: fadeout(@light-blue, 60%);
+@bar-light: fadeout(@light-blue, 80%);
+
+@sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serif: Georgia, "Times New Roman", Times, serif;
+@monospace: Menlo, Monaco, Consolas, "Courier New", monospace; 
+
+
+/*****************************
+ * MIXINS and HELPER CLASSES *
+ *****************************/
+.box-shadow(@horizontal:12px, @vertical:12px, @blur:0px, @spread:0px, @color: @dark-blue, @fadeout: 50%) {
+	-webkit-box-shadow: @horizontal @vertical @blur @spread fadeout(@color, @fadeout);
+	   -moz-box-shadow: @horizontal @vertical @blur @spread fadeout(@color, @fadeout);
+	        box-shadow: @horizontal @vertical @blur @spread fadeout(@color, @fadeout);
+}
+.box-shadow-inset(@horizontal:0, @vertical:0, @blur:48px, @spread:0, @color: @black, @fadeout: 0%) {
+	-webkit-box-shadow: inset @horizontal @vertical @blur @spread fadeout(@color, @fadeout);
+	   -moz-box-shadow: inset @horizontal @vertical @blur @spread fadeout(@color, @fadeout);
+	        box-shadow: inset @horizontal @vertical @blur @spread fadeout(@color, @fadeout);
+}
+.text-shadow(@color:#000) {
+	text-shadow: 1px 1px 4px fadeout(@color, 60%);
+}
+
+
+/***********************
+ * BOOTSTRAP OVERRIDES *
+ ***********************/
+ul.separated {
+	list-style-type: none;
+	margin: 12px; 
+	padding: 0;
+	li {
+		display: inline;
+		padding: 0 10px 0 12px;
+		margin: 0;
+		&:not(:first-child) {
+			border-left: 1px solid #999;
+		}
+	}
+}
+
+.wrapper {
+	padding: 32px 8px;
+}
+.container {
+	max-width: 970px;
+	&.boxed {
+		padding: 16px 8px;
+		background-color: @white;
+		.box-shadow;
+	}
+}
+input.currency {
+}
+
+div.modal-footer {
+	text-align: center;
+	padding: 0;
+	.btn {
+		width: 100%;
+		margin: 0;
+		border-radius: 0;
+	}
+
+}
+
+
+/******************
+ * RECEIPT HEADER *
+ ******************/
+header {
+	margin: 24px 12px;
+	text-align: center;
+	color: @dark-blue;
+	h1, h2, h3 {
+		font-family: @serif!important;
+	}
+	h1 {
+		font-weight: 700;
+	}
+	h3 {
+		font-size: 21px;
+		line-height: 25px;
+		font-weight: 300;
+	}
+	.btn {
+		text-transform: uppercase;
+	}
+}
+
+.configuration {
+	padding: 0 36px;
+	margin: 24px 12px;
+	span.divider {
+		text-align: center;
+		color: @light-blue;
+		position: relative;
+		line-height: 45px;
+		font-size: 18px;
+		font-weight: 100;
+		text-transform: uppercase;
+		font-style: italic;
+		color: @light-blue;
+		&::before, &::after {
+			position: absolute;
+			top: 50%;
+			bottom: 50%;
+			border-bottom: 1px solid @light-gray;
+			content: '';
+		}
+		&::before {
+			left: 10%;
+			right: 55%;
+			margin-right: 15px;
+		}
+		&::after {
+			left: 55%;
+			right: 10%;
+			margin-left: 15px;
+		}
+		width: 100%;
+		display: block;
+	}
+  .incometaxinput {
+    width:100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+
+/****************
+ * RECEIPT BODY *
+ ****************/
+div.background {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	background-color: @light-blue;
+	.box-shadow-inset(0, 0, 100px, 0, @dark-blue, 10%);
+	header {
+		color: #fff;
+	}
+}
+
+/*******************
+ * SUBTOTAL TABLES *
+ *******************/
+table.table-subtotal {
+	.data-subtitle,
+	.data-subtotal {
+		text-align: right;
+	}
+
+	> tbody > tr > td,
+	> tbody > tr > th {
+		border-top: 0px;
+	}
+}
+
+/***************
+ * INTRO TABLE *
+ ***************/
+table.table-intro {
+}
+
+/******************
+ * CATEGORY TABLE *
+ ******************/
+table.table-categories {
+	border: solid #ddd;
+	border-width: 2px 0px;
+	tr {
+		td {
+			.text-shadow(@white);
+			border-top: none!important;
+			position: relative;
+			z-index: 0;
+			div.data-bar {
+				position: absolute;
+				left: 0;
+				top: 5px;
+				bottom: 5px;
+				z-index: -1;
+				background-color: @green;
+			}
+			.fa {
+				vertical-align: middle;
+				font-size: medium;
+				color: @dark-gray;
+			}
+		}
+		&.category {
+			font-weight: bold;
+		}
+		&.subcategory {
+			div.data-bar {
+				background-color: @mint;
+			}
+			font-size: small;
+		}
+		&:hover {
+			td > div.data-bar {
+				background-color: @light-green;
+			}
+			.fa {
+				color: @light-gray;
+			}
+		}
+	}
+}
+
+
+/****************
+ * OUTTRO TABLE *
+ ****************/
+table.table-outtro {
+	tr.tax-total {
+		border-top: solid 2px #ddd;
+	}
+}
+
+
+/******************
+ * RECEIPT FOOTER *
+ ******************/
+footer {
+		text-align: center;
+		color: @dark-blue;
+}
+
+
+/**************
+ * ANIMATIONS *
+ **************/
+.modal-backdrop{
+  opacity: .7;
+}

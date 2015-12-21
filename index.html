@@ -1,0 +1,192 @@
+<html ng-app="taxReceipt">
+	<head>
+		<!-- AngularJS -->
+		<link rel="stylesheet" href="https://rawgithub.com/mgcrea/angular-motion/master/dist/angular-motion.min.css">
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+		<script src="js/angular.js" type="text/javascript"></script>
+		<script src="js/app.js" type="text/javascript"></script>
+		<!-- AngularStrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-animate.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.2/angular-strap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-strap/2.1.2/angular-strap.tpl.min.js"></script>
+		<!-- LESS CSS styles... pre-compile for use in production -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+		<script src="js/less.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	</head>
+
+	<body ng-controller="TaxReceiptCtrl" class="bg-gray">
+		<div class="background"></div>
+		<div class="wrapper">
+			<div class="container boxed">
+				<header>
+					<h1>Your 2014 Taxpayer Receipt</h1>
+					<h3>Understand how and where your tax dollars are being spent. Enter your 2014 income tax info to get started.</h3>
+				</header>
+
+				<div class="row configuration">
+					<div class="incometaxinput">
+						<div class="input-group">
+							<input type="number" class="form-control currency input-lg" placeholder="Income Tax" ng-model="calculate.income"/>
+							<span class="input-group-btn">
+								<a class="btn btn-danger btn-lg" bs-modal data-template="calculate-modal.html" data-container="body">Calculate</a>
+							</span>
+						</div>
+					</div>
+<!-- Removing on request from Ashleigh, 2015-04-10
+					<div class="col-sm-2">
+						<span class="divider">Or</span>
+					</div>
+					<div class="col-sm-5">
+						<div class="input-group">
+							<input type="number" class="form-control currency input-lg" placeholder="Total Income" ng-model="estimate.income"/>
+							<span class="input-group-btn">
+								<a class="btn btn-danger btn-lg" bs-modal data-template="estimate-modal.html" data-container="body">Estimate</a>
+							</span>
+						</div>
+					</div>
+-->
+				</div>
+
+
+				<!-- Intro Table -->
+				<table class="table table-intro table-subtotal">
+					<tbody>
+						<tr>
+							<th class="data-title">Programs &amp; Services</th>
+							<th class="data-subtitle" ng-if="(tax.income)">Your Tax Payment</th>
+						</tr>
+						<tr ng-if="(tax.income)">
+							<td class="data-title">Income Tax</td>
+							<td class="data-subtotal">{{tax.income | currency : '$' : 2}}</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<!-- Main Category Table -->
+				<table class="table table-hover table-categories">
+					<tbody receipt.category ng-repeat="category in budget.categories" ng-category="category"></tbody>
+				</table>
+
+				<!-- Outtro Table -->
+				<table class="table table-outtro table-subtotal" ng-if="(tax.income || tax.social || tax.medicare)">
+					<tbody>
+						<tr ng-if="(tax.social)">
+							<td class="data-title">Social Security Tax</td>
+							<td class="data-subtotal">{{tax.social | currency : '$' : 2}}</td>
+						</tr>
+						<tr ng-if="(tax.medicare)">
+							<td class="data-title">Medicare Tax</td>
+							<td class="data-subtotal">{{tax.medicare | currency : '$' : 2}}</td>
+						</tr>
+						<tr class="tax-total">
+							<th class="data-title">Total Income and Payroll Taxes You Paid</td>
+							<th class="data-subtotal">{{tax.total | currency : '$' : 2}}</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<footer>
+					<h3>Share Your Tax Receipt</h3>
+					<p>"Understand where your federal tax dollars are being spent with the White House tax receipt tool: https://wh.gov/tax-receipt via @whitehouse."</p>
+					<div class="btn-group">
+						<a class="btn btn-primary btn-lg" href="http://www.facebook.com/share.php?u=//www.whitehouse.gov/2014-taxreceipt"><i class="fa fa-facebook"></i></a>
+						<a class="btn btn-primary btn-lg" href="https://twitter.com/intent/tweet?text=Understand%20where%20your%20federal%20tax%20dollars%20are%20being%20spent%20with%20the%20White%20House%20tax%20receipt%20tool%3A%20https%3A%2F%2Fwh.gov%2Ftax-receipt%20via%20%40whitehouse&source=webclient"><i class="fa fa-twitter"></i></a>
+						<a class="btn btn-primary btn-lg" href="mailto:?Subject=See%20where%20your%20tax%20dollars%20are%20going&body=Enter%20a%20few%20pieces%20of%20information%20in%20the%20White%20House%27s%20new%20online%20tax%20receipt%20calculator%20and%20get%20a%20breakdown%20of%20how%20your%20tax%20dollars%20are%20being%20spent%3A%20www.whitehouse.gov%2F2014-taxreceipt"><i class="fa fa-envelope"></i></a>
+						<a class="btn btn-primary btn-lg" receipt.embed-popover><i class="fa fa-code"></i></a>
+					</div>
+					<ul class="separated">
+						<li><a href="https://www.whitehouse.gov/privacy">Privacy Policy</a></li>
+						<li><a href="https://www.whitehouse.gov/2014-taxreceipt">About this Tool</a></li>
+					</ul>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+<script type="text/ng-template" id="calculate-modal.html">
+	<div class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" ng-click="$hide()">&times;</button>
+					<h4 class="modal-title">Personalize Tax Receipt</h4>
+				</div>
+				<div class="modal-body form-horizontal">
+					<div class="form-group">
+						<label for="modal-income-tax" class="col-sm-4 control-label">Income Tax</label>
+						<div class="col-sm-8">
+							<input type="number" class="form-control currency" id="modal-income-tax" placeholder="Income taxes you paid in 2014" ng-model="calculate.income" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="modal-social-tax" class="col-sm-4 control-label">Social Security Tax</label>
+						<div class="col-sm-8">
+							<input type="number" class="form-control currency" id="modal-social-tax" placeholder="Social Security taxes you paid in 2014" ng-model="calculate.social" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="modal-medicare-tax" class="col-sm-4 control-label">Medicare Tax</label>
+						<div class="col-sm-8">
+							<input type="number" class="form-control currency" id="modal-medicare-tax" placeholder="Medicare taxes you paid in 2014" ng-model="calculate.medicare" />
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary btn-lg" ng-click="calculateReceipt(true, $hide)">Calculate</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/ng-template" id="estimate-modal.html">
+	<div class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" ng-click="$hide()">&times;</button>
+					<h4 class="modal-title">Personalize Tax Receipt</h4>
+				</div>
+				<div class="modal-body form-horizontal">
+					<div class="form-group">
+						<label for="modal-total-income" class="col-sm-4 control-label">Total Income</label>
+						<div class="col-sm-8">
+							<input type="number" class="form-control" id="modal-total-income" placeholder="Total income you earned in 2014" ng-model="estimate.income" />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-sm-4 control-label">Marital Status</label>
+						<div class="col-sm-8">
+							<div class="btn-group" ng-model="estimate.married" bs-radio-group>
+								<label class="btn btn-default"><input type="radio" class="btn btn-default" value="0" />Single</label>
+								<label class="btn btn-default"><input type="radio" class="btn btn-default" value="" />Married</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="modal-number-children" class="col-sm-4 control-label">Number of Children</label>
+						<div class="col-sm-8">
+							<input type="number" class="form-control" id="modal-number-children" placeholder="Number of children you claim as dependents" ng-model="estimate.children" />
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary btn-lg" ng-click="calculateReceipt(false, $hide)">Estimate</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
