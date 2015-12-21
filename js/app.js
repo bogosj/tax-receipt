@@ -1,9 +1,32 @@
 var app = angular.module('taxReceipt', ['mgcrea.ngStrap']);
 var max = 0.5219;
 
+var getTotalBudget = function(budgetData) {
+	var total = 0;
+	for (var i=0; i<budgetData['categories'].length; i++){
+		var category = budgetData['categories'][i];
+		if (category['dollars']) {
+			total += category['dollars'];
+		} else {
+			for (var j=0; j<category['categories'].length; j++){
+				var subCategory = category['categories'][j];
+				total += subCategory['dollars'];
+			}
+		}
+	}
+	return total;
+}
+
+var budgetCalculation = function(budgetData) {
+	budgetData['total'] = getTotalBudget(budgetData);
+	return budgetData;
+};
+
 app.controller('TaxReceiptCtrl', function($scope, $http) {
 	// Load budget from JSON file
-	$http.get('data/budget.json').success(function(data) { $scope.budget = angular.fromJson(data); });
+	$http.get('data/budget.json').success(function(data) {
+		 $scope.budget = budgetCalculation(angular.fromJson(data));
+	});
 	$scope.tax = null;
 	$scope.calculateReceipt = function() {
 		$scope.tax = angular.copy($scope.property_tax);
